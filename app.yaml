@@ -9,13 +9,20 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
+- url: /_ah/spi/.*
+  script: main.API
+  secure: always
+
 - url: .*
-  script: main.app
+  script: main.APPLICATION
+  secure: always
 
 libraries:
 - name: webapp2
   version: "2.5.2"
 
+- name: endpoints
+  version: 1.0
 
 skip_files:
 # Default patterns skipped by App Engine, which must be repeated since
