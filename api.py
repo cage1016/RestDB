@@ -19,7 +19,7 @@ datastroe_util = datastore_utils()
 @rest_db_api.api_class(resource_name='restdb')
 class RestDBApi(remote.Service):
   """
-  [DynamicModels – Django](https://code.djangoproject.com/wiki/DynamicModels)
+  DynamicModels - https://code.djangoproject.com/wiki/DynamicModels
 
   Dynamic create Model Class
 
