@@ -65,7 +65,7 @@ curl http://localhost:8080/_ah/api/restDB/v1/restdb/mitac/user | json
 
 Request Example
 ```sh
-curl http://localhost:8080/_ah/api/restDB/v1/restdb/mitac/user/query/eq?key_name=user&value=jelly223 | json
+curl -L -G -d "key_name=user&value=jelly223" http://localhost:8080/_ah/api/restDB/v1/restdb/mitac/user/query/eq | json
 ```
 
 ###Get Data By Gql
